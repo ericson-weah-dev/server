@@ -24,9 +24,9 @@ const cpus = require('os').cpus().length
 const cluster = require('cluster')
 
 // const cli = require('../../cli/man')
-const Config = require('./Config')
-const SSL = require('./ssl')
-const Handler = require('./Handler')
+const Config = require('./modules/config')
+const SSL = require('./modules/ssl')
+const Handler = require('./modules/server-handler')
 
 const config = new Config
 const ssl = new SSL
